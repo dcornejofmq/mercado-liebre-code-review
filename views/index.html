@@ -1,43 +1,62 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenidxs a MercadoLiebre</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Mercado Liebre</title>
+    
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/e5209340e5.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-    <header>
-        <div class="top-header">
-            <img src="images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
-            <p> LUGAR PARA PONER LA BARRA DE BUSQUEDA</p>
-            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="/images/logo-mercado-liebre.svg" class="logo">
+
+
+            <div class="wrapper">
+                <div class="container">
+                  <form role="search" method="get" class="search-form form" action="">
+                    <label>
+                        <span class="screen-reader-text">Search for...</span>
+                        <input type="search" class="search-field" placeholder="Que estas buscando..." value="" name="s" title="" />
+                    </label>
+                    <input type="submit" class="search-submit button" value="&#xf002" />
+                </form>
+                </div>
+              </div> 
+
+
+            <h2 class="copy-header">
+                <i class="fas fa-hand-holding-usd">
+                </i>Comprá en cuotas y sin tarjeta de créditos</h2>
         </div>
-        <div class="burger-menu">
-            <i class="fa fa-bars burger"></i>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-            </ul>
-            <ul>
-                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
+        <a href="#" class="hamburguer-button">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav class="main-navbar">
+        <ul class="left-navbar">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+        </ul>
+
+        <ul class="right-navbar">
+            <li><a href="/register">Crea tu cuenta <i class="far fa-address-card"></i> </a></li>
+            <li><a href="/login">Ingresa <i class="fas fa-sign-in-alt"></i> </a></li>
+            <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
+        </ul>
+    </nav>
     </header>
     <section class="banner">
         <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
     </section>
-    <main>
+
+    <main class="register">
         <section class="last-visit">
             <h3>Basado en tu última visita</h3>
             <article>
@@ -121,7 +140,7 @@
         <article>
             <i class="fas fa-credit-card"></i>
             <h4>Pagá con tarjeta o en efectivo</h4>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivoen puntos de pago. ¡Y siempre es
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
                 seguro!</p>
         </article>
         <article>
@@ -136,10 +155,10 @@
             <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre prtegid@.
             </p>
         </article>
-        <div>
-            <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
-        </div>
+        
     </footer>
+    <div>
+        <div class="divfoot"><p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p></div>
+    </div>
 </body>
-
 </html>
