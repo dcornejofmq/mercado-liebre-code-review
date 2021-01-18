@@ -7,14 +7,11 @@ const formattedPort = (() => {
     return portNumber && !isNaN(parseInt(portNumber)) ? parseInt(portNumber) : 3000;
 })()
 
-
 app.use(express.static('public'));
-
 
 app.listen(process.env.PORT || 3000 , () =>{
     console.log('Servidor funcionando en puerto 3000');
 });
-
 
 app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/views/index.html');
