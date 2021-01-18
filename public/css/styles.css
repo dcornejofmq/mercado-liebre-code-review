@@ -4,14 +4,12 @@
 body{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  margin: 0%;
-  
+  margin: 0%;  
  }
  .main-header{
     background-color: #eac926 ;
     padding: 20px;
  }
-
  .hamburguer-button{
    background-color: #03264c;
    color: white;
@@ -38,7 +36,6 @@ body{
    margin: 0;
    padding: 0;
  }
-
  .main-navbar a {
     text-decoration: none;
     color: #222222;
@@ -53,7 +50,6 @@ body{
   justify-content: space-around;
   align-items: center;
  }
- 
  article div.main-article{
   width: 100%;
   display: flex;
@@ -63,67 +59,52 @@ body{
   position: relative;
   padding: 15px;
 }
- 
  .price{
      font-size: 18px;
      width: 30%;
  }
- 
  .discount,
  .description{
      font-size: 16px;
      font-weight: bold;
-     
-     
  }
-
  .discount{
      width: 70%;
  }
- 
  .description{
      margin-top: 20px;
      }
- 
  h3,
  .description{
      color: #666;
  }
- 
  section.banner img{
      width: 100%;
      display: block;
-     
  }
- 
  main{
      width: 90%;
      margin: 0 auto;
  }
- 
  main section h3{
      margin: 20px 0px;
  }
  main article{
    transition: all .5s ease-in;
  }
-
  main article .description{
 height: 0px;
 overflow: hidden;
-
  }
 main article:hover .description{
   height: 40px;
   overflow: auto;
 }
-
- main section article{
+main section article{
      background-color: #fff;
      margin: 10px 0px;
  }
- 
- main section article img{
+main section article img{
      display: block;
      width: 100%;
  }
@@ -134,7 +115,6 @@ main article:hover .description{
  .discount{
      color: #39b54a;
  }
- 
  main section article i{
      display: block;
      font-size: 16px;
@@ -149,7 +129,6 @@ main article:hover .description{
      top: -15px;
      transition: .4s all
  }
-
  main section article i:hover{
    transform: rotate(360deg);
  }
@@ -160,15 +139,12 @@ main article:hover .description{
      text-align: center;
      justify-content: center;
  }
- 
  footer article{
      margin: 20px 0px;
  }
- 
  footer i{
      color: #1259c3;
  }
-
  /*sector para formulario*/
 .register{
 padding: 20px;
@@ -176,9 +152,6 @@ background-color: #ebebeb;
 width: 100%;
 font-weight: bold;
 }
-
-
-
 .login input,
 .register input{
   width: 100%;
@@ -267,7 +240,7 @@ background-color: #0022AA;
 .divfoot{
   background-color: #fff;
   color: #666;
-  padding: 20px 5%;
+  padding: 3px 5%;
   text-align: center;
 }
 
@@ -376,11 +349,8 @@ color: #292826;
 outline: 0;
 }
 
-
-
- @media (min-width: 768px){
+@media (min-width: 768px){
 .main-header-top-bar{
-  
   display: flex;
   justify-content: space-between;
 }
@@ -431,9 +401,7 @@ outline: 0;
   }
  }
 
-
-
- @media (min-width: 1200px){
+@media (min-width: 1200px){
    .logo{
      width: 250px;
    }
